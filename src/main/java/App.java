@@ -17,7 +17,10 @@ public class App {
 		
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 		
-		Car myCar = context.getBean(Car.class);
+		String param = "swift";
+		//String param = "corolla";
+		
+		Car myCar = context.getBean(param, Car.class);
 		
 		myCar.specs();
 		

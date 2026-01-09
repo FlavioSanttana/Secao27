@@ -3,7 +3,7 @@ package org.studyeasy.car;
 import org.springframework.stereotype.Component;
 import org.studyeasy.interfaces.Car;
 
-@Component
+@Component("swift")
 public class Swift implements Car {
 
 	@Override
